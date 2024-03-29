@@ -8,15 +8,31 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Dev Toolbox</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
     <h1>Hello! This is my web design/dev toolbox</h1>
+    <div id="controls">
+        <div class="row-flexbox">
+            <label for="completed-filter">Show:</label>
+            <select id="completed-filter">
+                <option value="all">All Tasks</option>
+                <option value="completed">Completed Tasks</option>
+                <option value="incomplete">Incomplete Tasks</option>
+            </select>
+        </div>
+        <div class="row-flexbox">
+            <label for="time-filter">Time:</label>
+            <input type="range" id="time-filter" min="0" max="20" step="1"
+                value="0">
+            <output for="time-filter">0</output> hours or more
+        </div>
+    </div>
     <div id="toolbox"></div>
 </body>
 

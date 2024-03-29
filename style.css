@@ -1,5 +1,6 @@
 body {
     padding: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -10,10 +11,24 @@ h1 {
     text-transform: uppercase;
 }
 
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
 #toolbox {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+}
+
+.row-flexbox {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .task {
@@ -30,7 +45,6 @@ h1 {
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     cursor: pointer;
 }
