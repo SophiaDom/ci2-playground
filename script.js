@@ -1,36 +1,36 @@
-// const tasks =
-//     [
-//         {
-//             "title": "Learn HTML",
-//             "img": 'html.webp',
-//             "time": 1,
-//             "completed": true
-//         },
-//         {
-//             "title": "Learn CSS",
-//             "img": 'css.webp',
-//             "time": 5,
-//             "completed": true
-//         },
-//         {
-//             "title": "Learn Javascript",
-//             "img": 'js.webp',
-//             "time": 10,
-//             "completed": true
-//         },
-//         {
-//             "title": "Learn Figma",
-//             "img": 'figma.png',
-//             "time": 20,
-//             "completed": false
-//         },
-//         {
-//             "title": "Learn p5",
-//             "img": 'p5.png',
-//             "time": 15,
-//             "completed": false
-//         }
-//     ]
+const tasks =
+    [
+        {
+            "title": "Learn HTML",
+            "img": 'html.webp',
+            "time": 1,
+            "completed": true
+        },
+        {
+            "title": "Learn CSS",
+            "img": 'css.webp',
+            "time": 5,
+            "completed": true
+        },
+        {
+            "title": "Learn Javascript",
+            "img": 'js.webp',
+            "time": 10,
+            "completed": true
+        },
+        {
+            "title": "Learn Figma",
+            "img": 'figma.png',
+            "time": 20,
+            "completed": false
+        },
+        {
+            "title": "Learn p5",
+            "img": 'p5.png',
+            "time": 15,
+            "completed": false
+        }
+    ]
 
 
 // const toolbox = document.querySelector('#toolbox');
