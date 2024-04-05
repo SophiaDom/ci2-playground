@@ -11,6 +11,17 @@ h1 {
     text-transform: uppercase;
 }
 
+span {
+    background: black;
+    padding: .5rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+a {
+    color: black;
+}
+
 #controls {
     display: flex;
     justify-content: center;
