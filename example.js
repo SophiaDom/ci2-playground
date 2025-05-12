@@ -46,8 +46,7 @@ const tasks =
             "completed": false
         }
     ]
-
-
+    
 const filters = {
     completed: document.querySelector('#completed-filter'),
     time: document.querySelector('#time-filter'),
@@ -55,11 +54,44 @@ const filters = {
 };
 const toolbox = document.querySelector('#toolbox');
 
-let showCategory = 'all';
-let minTime = 0;
-
 function generateTask(task) {
-    return `
+
+    let imgBox = ''
+    if (task.img){
+        imgBox = `<img src="./img/${task.img}" alt="${task.title}">`
+    }
+    toolbox.innerHTML = 
+`
+<div class="task">
+<h1>${task.title}</h1>
+${task.img ? `<img src="./img/${task.img}">`' : ''}
+<img src="./img/${task.img}" alt="${task.title}">
+<p>Time: ${task.time} hours</p>
+$
+</div>
+`
+}
+
+
+
+for(let task = 0; task < tasks.length; task++) {
+    generateTask(tasks[task]);
+}
+
+tasks.forEach(item => [
+    gererateTask(item);
+])
+
+// generateTask(tasks[0]);
+// generateTask(tasks[1]);
+// generateTask(tasks[2]);
+// generateTask(tasks[3]);
+
+// let showCategory = 'all';
+// let minTime = 0;
+
+// function generateTask(task) {
+//     return `
         <div class="task ${task.completed ? 'completed' : ''}" onclick="toggleCompleted(this)">
             ${task.img ? `<img src="img/${task.img}" alt="${task.title}">` : ''}
             <p>${task.title} - ${task.time} hours</p>
